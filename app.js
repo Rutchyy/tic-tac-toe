@@ -3,7 +3,7 @@ Gameboard = {
     board: ["0", "0", "0", "0", "0", "0", "0", "0", "0"],
     noughts: {name: "James"},
     crosses: {name: "Will"},
-    move: "noughts",
+    move: "crosses",
     result: null
 }
 
@@ -53,7 +53,14 @@ function checkIfWon() {
     }
 }
 
+// Will check if the game is drawn
 function checkIfDrawn() {
+    const avalibleSpaces = Gameboard.board.filter((element) => {
+        return element == "0"
+    })
+    if(avalibleSpaces.length <= 0) {
+        Gameboard.result = "draw"
+    }
     // use a filter
     // then do dom stuff
 }
