@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 75vmin;
+    height: 75vmin;
+    outline: 5px black solid;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+    outline: 2.5px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell p {
+    position: absolute;
+    font-size: 10vmin;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vmin;
+    padding: 0;
+    margin: 0;
+}
+
+header h1, header div, #restart {
+    font-size: 5vmin;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 75vmin;
+    padding-bottom: 16px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form div input {
+    background: #f1f1f1;
+    border: none;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+
+#restart {
+    background: #f1f1f1;
+    border: none;
+    padding: 3px 20px;
+    border-radius: 10px;
+}

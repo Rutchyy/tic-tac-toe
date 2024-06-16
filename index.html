@@ -2,8 +2,26 @@
 <html lang="en">
     <head>
         <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <script src="app.js"></script>
+        <header>
+            <h1>Tic Tac Toe</h1>
+            <div id="result"></div>
+            <button id="restart">Restart</button>
+        </header>
+        <form>
+            <div>
+                <label for="player-one">Player Crosses</label>
+                <input type="text" name="player-one" id="player_one">
+            </div>
+            <div>
+                <label for="player-two">Player Noughts</label>
+                <input type="text" name="player-two" id="player_two">
+            </div>
+        </form>
+        <main class="container"></main>
+        <!-- <script src="app.js"></script> -->
+         <script src="build.js"></script>
     </body>
 </html>
