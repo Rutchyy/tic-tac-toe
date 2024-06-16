@@ -17,7 +17,6 @@ board.addEventListener("click", (event) => {
     let target = event.target
     let index = Array.from(target.parentNode.children).indexOf(target)
     updateBoard(index)
-    logBoard()
     checkIfWon()
     checkIfDrawn()
 
@@ -43,14 +42,6 @@ Gameboard = {
     noughts: {name: "James"},
     crosses: {name: "Will"},
     move: "crosses"
-}
-
-// Prints the board to the console, will be decrepitated soon
-function logBoard() {
-    console.log("-------------")
-    for(let i = 0; i < Gameboard.board.length; i += 3) {
-        console.log(Gameboard.board[i] + " " + Gameboard.board[i + 1] + " " + Gameboard.board[i + 2])
-    }
 }
 
 // Updates the game board, if the position isn't occupied
